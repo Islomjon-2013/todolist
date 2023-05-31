@@ -1,0 +1,58 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-size: 40px;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: red;
+  padding: 10px;
+}
+input {
+  flex: 1;
+  background: transparent;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-weight: 14px;
+}
+li {
+  position: relative;
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+li::before {
+  content: "";
+  position: absolute;
+  background-image: url(/images/affirmative-156538_1280.webp);
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 0px;
+  left: -50px;
+}
+.checked {
+  color: white;
+  text-decoration: line-through;
+}
+span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: blue;
+}
+span:hover {
+  color: white;
+}
